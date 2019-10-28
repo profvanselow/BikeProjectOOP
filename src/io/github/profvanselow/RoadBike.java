@@ -1,6 +1,6 @@
 package io.github.profvanselow;
 
-public class RoadBike extends Bike {
+public class RoadBike extends Bike implements RoadParts {
 
   private int tyreWidth, postHeight;
 
@@ -24,4 +24,24 @@ public class RoadBike extends Bike {
     System.out.println("This Roadbike bike has " + this.tyreWidth + "mm tyres and a post height of "
         + this.postHeight + ".");
   }//end method printDescription
+
+  @Override
+  public int getTyreWidth() {
+    return this.tyreWidth;
+  }//end method
+
+  @Override
+  public void setTyreWidth(int newValue) {
+    this.tyreWidth = newValue;
+  }//end method
+
+  @Override
+  public int getPostHeight() {
+    return this.postHeight;
+  }//end method
+
+  @Override
+  public void setPostHeight(int newValue) {
+    this.postHeight = newValue;
+  }//end method
 }//end class RoadBike

@@ -1,6 +1,6 @@
 package io.github.profvanselow;
 
-public class MountainBike extends Bike {
+public class MountainBike extends Bike implements MountainParts {
 
   private String suspension, type;
   private int frameSize;
@@ -23,4 +23,25 @@ public class MountainBike extends Bike {
         + " suspension and a frame size of " + this.frameSize + "inches.");
 
   }//end method printDescription
+
+  @Override
+  public String getSuspension() {
+    return this.suspension;
+  }//end method getSuspension
+
+  @Override
+  public void setSuspension(String newValue) {
+    this.suspension = newValue;
+  }//end method setSuspension
+
+  @Override
+  public String getType() {
+    return this.type;
+  }//end method getType
+
+  @Override
+  public void setType(String newValue) {
+    this.type = newValue;
+  }//end method setType
+
 }//end class MountainBike
