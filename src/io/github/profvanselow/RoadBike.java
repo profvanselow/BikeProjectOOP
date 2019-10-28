@@ -20,8 +20,11 @@ public class RoadBike extends Bike implements RoadParts {
   }//end constructor
 
   public String toString() {
-    return (super.toString() + "\nThis Roadbike bike has " + this.tyreWidth
-        + "mm tyres and a post height of " + this.postHeight + ".");
+
+    return (super.toString() + "\nThis Roadbike bike has "
+        + this.tyreWidth + "mm tyres and a post height of "
+        + this.postHeight + "."
+        + "\nThis bike is best for " + RoadParts.terrain);
   }//end method toString
 
   @Override

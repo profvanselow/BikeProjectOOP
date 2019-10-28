@@ -3,7 +3,8 @@ package io.github.profvanselow;
 public interface MountainParts {
 
   //constant declaration
-  public final String TERRAIN = "off road";
+  //public final String TERRAIN = "off road";
+  public final BikeUses terrain = BikeUses.off_road;
 
   //required methods after implementation
   public String getSuspension();

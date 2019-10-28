@@ -3,7 +3,8 @@ package io.github.profvanselow;
 public interface RoadParts {
 
   //constant declaration
-  public final String TERRAIN = "track racing";
+  //public final String TERRAIN = "track racing";
+  public final BikeUses terrain = BikeUses.track;
 
   //required methods after implementation
   public int getTyreWidth();
